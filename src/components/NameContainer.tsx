@@ -1,27 +1,13 @@
 import { useEffect,useState } from "react";
 import { Name } from "./Name";
+import { PeopleData } from "../mock_api/data/people";
 
-interface People {
+interface PeopleName extends PeopleData {
     name:string;
-    height:string;
-	mass:string;
-	hair_color:string;
-	skin_color: string;
-    eye_color:string;
-	birth_year:string,
-	gender:string;
-	homeworld:string;
-	films: string[];
-	species:[];
-	vehicles:string[];
-	starships:string[];
-    created:string;
-    edited:string;
-    url:string;
-			
 }
+    
 export const NameContainer:React.FC = () =>{
-    const [responseData,setResponseData] = useState<People[]>([]);
+    const [responseData,setResponseData] = useState<PeopleName[]>([]);
     const labelStr = "First Character Name";
     useEffect(()=> {
         async function getPeople (){
