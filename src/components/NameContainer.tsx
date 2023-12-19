@@ -1,4 +1,5 @@
 import { useEffect,useState } from "react";
+import { Name } from "./Name";
 
 interface People {
     name:string;
@@ -24,7 +25,7 @@ export const NameContainer:React.FC = () =>{
     const labelStr = "First Character Name";
     useEffect(()=> {
         async function getPeople (){
-            const response = await fetch('https://swapi.dev/api/people');
+            const response = await fetch('https://swapi.dev/api/people/');
             const result = await response.json();
             setResponseData(result.results);
         }
@@ -35,7 +36,7 @@ export const NameContainer:React.FC = () =>{
     return(
         <div>
             <span >{labelStr}:</span>
-            {<span>{responseData[0].name}</span>}
+            <Name name={responseData[0].name}/>
         </div>
     );
 }
