@@ -12,7 +12,7 @@ export function makeServer({ environment = "development" } = {}) {
       server.db.loadData(intitalData);
     },
     routes() {
-      this.namespace = "/swapi.dev/api";
+      this.namespace = "/api";
       this.get(
         "/people",
         (schema) => {

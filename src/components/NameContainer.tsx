@@ -11,9 +11,9 @@ export const NameContainer:React.FC = () =>{
     const labelStr = "First Character Name";
     useEffect(()=> {
         async function getPeople (){
-            const response = await fetch('https://swapi.dev/api/people/');
+            const response = await fetch('/api/people');
             const result = await response.json();
-            setResponseData(result.results);
+            setResponseData(result);
         }
         getPeople()
     },[])

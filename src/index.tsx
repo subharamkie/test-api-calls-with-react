@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { makeServer } from './mock_api/server';
+if(process.env.NODE_ENV === 'development'){
+  makeServer({environment:'development'});
+}
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

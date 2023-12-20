@@ -9,7 +9,7 @@ export interface PeopleData {
   gender: string;
   homeworld: string;
   films: string[];
-  species: [];
+  species: [string];
   vehicles: string[];
   starships: string[];
   created: string;
@@ -34,7 +34,7 @@ export const people: PeopleData[] = [
       "https://swapi.dev/api/films/3/",
       "https://swapi.dev/api/films/6/",
     ],
-    species: [],
+    species: [''],
     vehicles: [
       "https://swapi.dev/api/vehicles/14/",
       "https://swapi.dev/api/vehicles/30/",
@@ -113,7 +113,7 @@ export const people: PeopleData[] = [
       "https://swapi.dev/api/films/3/",
       "https://swapi.dev/api/films/6/",
     ],
-    species: [],
+    species: [''],
     vehicles: [],
     starships: ["https://swapi.dev/api/starships/13/"],
     created: "2014-12-10T15:18:20.704000Z",
@@ -136,7 +136,7 @@ export const people: PeopleData[] = [
       "https://swapi.dev/api/films/3/",
       "https://swapi.dev/api/films/6/",
     ],
-    species: [],
+    species: [''],
     vehicles: ["https://swapi.dev/api/vehicles/30/"],
     starships: [],
     created: "2014-12-10T15:20:09.791000Z",
@@ -158,7 +158,7 @@ export const people: PeopleData[] = [
       "https://swapi.dev/api/films/5/",
       "https://swapi.dev/api/films/6/",
     ],
-    species: [],
+    species: [''],
     vehicles: [],
     starships: [],
     created: "2014-12-10T15:52:14.024000Z",
@@ -180,7 +180,7 @@ export const people: PeopleData[] = [
       "https://swapi.dev/api/films/5/",
       "https://swapi.dev/api/films/6/",
     ],
-    species: [],
+    species: [''],
     vehicles: [],
     starships: [],
     created: "2014-12-10T15:53:41.121000Z",
@@ -216,7 +216,7 @@ export const people: PeopleData[] = [
     gender: "male",
     homeworld: "https://swapi.dev/api/planets/1/",
     films: ["https://swapi.dev/api/films/1/"],
-    species: [],
+    species: [''],
     vehicles: [],
     starships: ["https://swapi.dev/api/starships/12/"],
     created: "2014-12-10T15:59:50.509000Z",
@@ -241,7 +241,7 @@ export const people: PeopleData[] = [
       "https://swapi.dev/api/films/5/",
       "https://swapi.dev/api/films/6/",
     ],
-    species: [],
+    species: [''],
     vehicles: ["https://swapi.dev/api/vehicles/38/"],
     starships: [
       "https://swapi.dev/api/starships/48/",
